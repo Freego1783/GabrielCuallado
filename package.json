@@ -9,7 +9,7 @@
     "build": "run-s clean build:parcel build:hugo",
     "stage": "run-s cleanStage stage:parcel stage:hugo",
     "start": "run-s clean dev",
-    "dev": "run-p dev:**",
+    "dev": "tinacms dev -c \"run-p dev:hugo dev:parcel\"",
     "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F --minify",
     "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/app.js --no-cache",
     "stage:hugo": "cross-env NODE_ENV=stage hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc --minify",
@@ -31,6 +31,8 @@
     "node": ">= 10.16.0"
   },
   "devDependencies": {
+    "@tinacms/cli": "^1.9.5",
+    "@types/node": "^22.15.12",
     "cross-env": "^6.0.3",
     "glslify-bundle": "^5.1.1",
     "glslify-deps": "^1.3.2",
@@ -50,6 +52,7 @@
     "parcel-bundler": "^1.12.4",
     "smooth-scrollr": "^0.3.2",
     "three": "^0.118.3",
+    "tinacms": "^2.7.5",
     "tiny-emitter": "^2.1.0",
     "virtual-scroll": "^2.1.1"
   }

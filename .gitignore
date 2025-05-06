@@ -134,3 +134,5 @@ stage/
 dist/
 
 # End of https://www.gitignore.io/api/node,macos
+node_modules
+.env
