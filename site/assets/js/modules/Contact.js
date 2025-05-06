@@ -1,8 +1,8 @@
-import module from '../lib/module.js';
+import mod from '../lib/module.js';
 import { Events } from '../events';
 
 
-export default class extends module {
+export default class extends mod {
     constructor(m) {
         super(m);
     }

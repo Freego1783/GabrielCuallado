@@ -1,4 +1,4 @@
-import module from '../lib/module.js';
+import mod from '../lib/module.js';
 import gsap from 'gsap';
 import Events from '../events/Events';
 import { lerp, calcWinsize, getMousePos } from '../utils';
@@ -14,7 +14,7 @@ window.addEventListener('resize', () => {
 // // Track the mouse position
 let mouse = {x: 0, y: 0};
 
-export default class extends module {
+export default class extends mod {
     constructor(m) {
         super(m);
     }

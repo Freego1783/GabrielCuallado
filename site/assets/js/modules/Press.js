@@ -1,6 +1,6 @@
-import module from '../lib/module.js';
+import mod from '../lib/module.js';
 
-export default class extends module {
+export default class extends mod {
     constructor(m) {
         super(m);
     }

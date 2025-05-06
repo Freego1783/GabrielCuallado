@@ -1,4 +1,4 @@
-import module from '../lib/module.js';
+import mod from '../lib/module.js';
 import VirtualScroll from 'virtual-scroll';
 import charming from 'charming'
 import gsap from 'gsap';
@@ -9,7 +9,7 @@ import { Events } from '../events';
 import {requestInterval, clearRequestInterval} from '../utils';
 
 
-export default class extends module {
+export default class extends mod {
     constructor(m) {
         super(m);
 

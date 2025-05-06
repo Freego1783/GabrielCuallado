@@ -1,4 +1,4 @@
-import module from '../lib/module.js';
+import mod from '../lib/module.js';
 import { SmoothScroll } from '../lib/smooth-scrollr-fork';
 import { gsap } from "gsap";
 import Gl from "../gl";
@@ -6,7 +6,7 @@ import Plane from '../gl/Plane';
 import { preloadImages, calcWinsize } from '../utils';
 import { Events } from '../events';
 
-export default class extends module {
+export default class extends mod {
     constructor(m) {
         super(m);
 
